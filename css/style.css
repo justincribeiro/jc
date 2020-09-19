@@ -1,0 +1,173 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+html,
+body {
+  height: 100%;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+body {
+  background-color: #ff6e40;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+body .top-content {
+  height: 50%;
+}
+
+body h1 {
+  color: white;
+  font-size: 200px;
+  font-size: 10vw;
+  line-height: 0.9;
+  padding: 50px 100px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+  body h1 {
+    font-size: 200px;
+    font-size: 20vw;
+  }
+}
+
+@media (max-width: 768px) {
+  body h1 {
+    top: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  body h1 {
+    font-size: 160px;
+    font-size: 24vw;
+    padding: 0;
+  }
+}
+
+body h1 span {
+  display: block;
+  font-size: 160px;
+  font-size: 8vw;
+}
+
+@media (max-width: 1024px) {
+  body h1 span {
+    font-size: 160px;
+    font-size: 16vw;
+  }
+}
+
+@media (max-width: 480px) {
+  body h1 span {
+    font-size: 140px;
+    font-size: 20vw;
+  }
+}
+
+body .social {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+body .social a {
+  color: white;
+  display: inline-block;
+  font-size: 45px;
+  margin: 0 50px;
+  padding: 10px 20px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+@media (max-width: 768px) {
+  body .social a {
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  body .social a {
+    margin: 0 10px;
+  }
+}
+
+body .social a:hover {
+  opacity: .8;
+}
+
+body .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (max-width: 580px) {
+  body .video-container {
+    margin-bottom: 30px;
+  }
+}
+
+body .video-container iframe,
+body .video-container object,
+body .video-container embed {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  body .video-container iframe,
+  body .video-container object,
+  body .video-container embed {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+body .content {
+  font-family: "Lato", sans-serif;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body a {
+  color: white;
+}
+
+body footer {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 0 auto 20px auto;
+  width: 95%;
+}
+
+body footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  body footer p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

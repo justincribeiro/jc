@@ -1,0 +1,162 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+// font-family: 'Fredericka the Great', cursive;
+// font-family: 'Lato', sans-serif;
+// Brand colors
+$color1: #ff6e40;
+$color2: #f5511e;
+$color3: #212121;
+
+$font1: 'Lato', sans-serif;
+
+
+html,
+body {
+	height: 100%;
+}
+
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+body {
+	//background: url('images/') no-repeat center;
+	background-color: $color1;
+	color: white;
+	font-family: 'Fredericka the Great', cursive;
+
+	.top-content {
+		height: 50%;
+	}
+
+	h1 {
+		color: white;
+		font-size: 200px;
+		font-size: 10vw;
+		line-height: 0.9;
+		padding: 50px 100px;
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
+		@media(max-width: 1024px) {
+			font-size: 200px;
+			font-size: 20vw;
+		}
+
+		@media(max-width: 768px) {
+			top: 30%;
+		}
+
+		@media(max-width: 480px) {
+			font-size: 160px;
+			font-size: 24vw;
+			padding: 0;
+		}
+
+		span {
+			display: block;
+			font-size: 160px;
+			font-size: 8vw;
+
+			@media(max-width: 1024px) {
+				font-size: 160px;
+				font-size: 16vw;
+			}
+
+			@media(max-width: 480px) {
+				font-size: 140px;
+				font-size: 20vw;
+			}
+		}
+	}
+
+	.social {
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+
+		a {
+			color: white;
+			display: inline-block;
+			font-size: 45px;
+			margin: 0 50px;
+			padding: 10px 20px;
+			-webkit-transition: 200ms;
+			transition: 200ms;
+
+			@media(max-width: 768px) {
+				margin: 0 25px;
+			}
+
+			@media(max-width: 480px) {
+				margin: 0 10px;
+			}
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		margin: 0 auto;
+		@media(max-width: 580px) {
+			margin-bottom: 30px;
+		}
+
+		& iframe,
+		& object,
+		& embed {
+			position: absolute;
+			top: 50px;
+			left: 50%;
+			width: 60%;
+			height: 60%;
+			-webkit-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+			@media(max-width: 768px) {
+				width: 80%;
+				height: 80%;
+			}
+		}
+	}
+
+	.content {
+		font-family: $font1;
+		width: 95%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	a {
+		color: white;
+	}
+	
+	footer {
+		font-family: 'Lato', sans-serif;
+		text-align: center;
+    padding: 30px 10px;
+		margin: 0 auto 20px auto;
+		width: 95%;
+		
+		p {
+			font-size: 14px;
+			@media(max-width: 480px) {
+				font-size: 12px;
+			}
+		}
+	}
+}
